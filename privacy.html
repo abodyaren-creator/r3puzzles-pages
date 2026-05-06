@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية — Privacy Policy — 3R Puzzles Games</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { background: #0A0E21; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Tahoma, sans-serif;
+            line-height: 1.8;
+            color: #E0E0E8;
+            padding: 40px 20px 60px;
+            max-width: 800px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+        h1 { color: #7C4DFF; font-size: 2em; margin-bottom: 10px; }
+        h2 { color: #7C4DFF; font-size: 1.4em; margin-top: 30px; margin-bottom: 15px; }
+        p, li { color: #C0C0CC; margin-bottom: 10px; }
+        ul { margin-bottom: 15px; }
+        html[dir="rtl"] ul { padding-right: 20px; }
+        html[dir="ltr"] ul { padding-left: 20px; }
+        .section {
+            background: #1E1E2E;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        .meta { color: #888; font-size: 0.9em; margin-bottom: 30px; }
+        .highlight { color: #00E676; font-weight: bold; }
+        a { color: #7C4DFF; }
+
+        /* ─── Language toggle pill ─── */
+        .lang-toggle {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            position: sticky;
+            top: 12px;
+            z-index: 10;
+        }
+        .lang-toggle .pill {
+            display: inline-flex;
+            background: #1E1E2E;
+            border: 1px solid #2A2A3E;
+            border-radius: 999px;
+            padding: 4px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+        }
+        .lang-toggle button {
+            background: transparent;
+            color: #888;
+            border: none;
+            padding: 8px 22px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 999px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: inherit;
+        }
+        .lang-toggle button:hover { color: #C0C0CC; }
+        .lang-toggle button.active {
+            background: #7C4DFF;
+            color: white;
+        }
+
+        /* Language panels — one at a time */
+        .lang-panel { display: none; }
+        .lang-panel.active { display: block; }
+        html[dir="rtl"] .lang-panel { text-align: right; }
+        html[dir="ltr"] .lang-panel { text-align: left; }
+
+        /* Smooth fade between languages */
+        .lang-panel { animation: fadeIn 0.25s ease; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* English panel uses LTR-friendly font */
+        #panel-en { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+    </style>
+</head>
+<body>
+
+<!-- Language toggle (top, sticky) -->
+<div class="lang-toggle">
+    <div class="pill" role="tablist" aria-label="Language / اللغة">
+        <button id="btn-ar" type="button" class="active" onclick="setLang('ar')"
+                role="tab" aria-controls="panel-ar" lang="ar">العربية</button>
+        <button id="btn-en" type="button" onclick="setLang('en')"
+                role="tab" aria-controls="panel-en" lang="en">English</button>
+    </div>
+</div>
+
+<!-- ─── Arabic panel ─── -->
+<div id="panel-ar" class="lang-panel active" dir="rtl" lang="ar">
+    <h1>سياسة الخصوصية</h1>
+    <p class="meta">تطبيق: 3R Puzzles Games<br>آخر تحديث: 1 مايو 2026</p>
+
+    <div class="section">
+        <h2>1. مقدمة</h2>
+        <p>مرحباً بك في تطبيق <strong>3R Puzzles Games</strong> — مجموعة ألعاب الألغاز. نحترم خصوصيتك احتراماً كاملاً، وهذه السياسة توضح كيف نتعامل مع معلوماتك.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. البيانات التي نجمعها</h2>
+        <p class="highlight">✓ تطبيقنا لا يجمع أي بيانات شخصية من المستخدمين.</p>
+        <p>التطبيق:</p>
+        <ul>
+            <li>لا يطلب تسجيل الدخول أو إنشاء حساب.</li>
+            <li>لا يطلب الوصول إلى الكاميرا أو الصور أو جهات الاتصال.</li>
+            <li>لا يجمع الموقع الجغرافي.</li>
+            <li>لا يحتوي على إعلانات من أطراف ثالثة.</li>
+            <li>لا يرسل أي بيانات إلى خوادم خارجية.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. التخزين المحلي</h2>
+        <p>التطبيق يحفظ البيانات التالية <strong>على جهازك فقط</strong> (لا تغادر جهازك أبداً):</p>
+        <ul>
+            <li>أعلى النقاط وعدد الألعاب المكتملة.</li>
+            <li>تقدم المراحل في ألعاب مثل لغز المواقف و Nonogram و Flow Free.</li>
+            <li>تفضيلاتك (الوضع الليلي/النهاري، اللغة).</li>
+        </ul>
+        <p>هذه البيانات تُحذف تلقائياً عند إلغاء تثبيت التطبيق.</p>
+    </div>
+
+    <div class="section">
+        <h2>4. الأذونات</h2>
+        <p>التطبيق لا يطلب أي أذونات حساسة من نظام Android أو iOS.</p>
+    </div>
+
+    <div class="section">
+        <h2>5. الأطفال</h2>
+        <p>تطبيقنا مناسب لجميع الأعمار. نظراً لعدم جمعنا أي بيانات، فإن التطبيق آمن تماماً للأطفال دون سن 13 عاماً ويتوافق مع قانون COPPA.</p>
+    </div>
+
+    <div class="section">
+        <h2>6. التغييرات على هذه السياسة</h2>
+        <p>قد نحدث هذه السياسة من وقت لآخر. أي تغييرات ستُنشر على هذه الصفحة مع تحديث تاريخ "آخر تحديث" أعلاه.</p>
+    </div>
+
+    <div class="section">
+        <h2>7. تواصل معنا</h2>
+        <p>لأي استفسار حول هذه السياسة، يمكنك التواصل معنا عبر البريد الإلكتروني:</p>
+        <p><a href="mailto:abodyaren@gmail.com"><strong>abodyaren@gmail.com</strong></a></p>
+    </div>
+</div>
+
+<!-- ─── English panel ─── -->
+<div id="panel-en" class="lang-panel" dir="ltr" lang="en">
+    <h1>Privacy Policy</h1>
+    <p class="meta">App: 3R Puzzles Games<br>Last updated: May 1, 2026</p>
+
+    <div class="section">
+        <h2>1. Introduction</h2>
+        <p>Welcome to <strong>3R Puzzles Games</strong> — a collection of puzzle games. We fully respect your privacy. This policy explains how we handle your information.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Data We Collect</h2>
+        <p class="highlight">✓ Our app does not collect any personal data from users.</p>
+        <p>The app:</p>
+        <ul>
+            <li>Does not require login or account creation.</li>
+            <li>Does not request access to camera, photos, or contacts.</li>
+            <li>Does not collect location data.</li>
+            <li>Does not contain third-party advertisements.</li>
+            <li>Does not send any data to external servers.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Local Storage</h2>
+        <p>The app saves the following data <strong>on your device only</strong> (never leaves your device):</p>
+        <ul>
+            <li>High scores and number of games completed.</li>
+            <li>Level progress for games like Parking Puzzle, Nonogram, and Flow Free.</li>
+            <li>Your preferences (dark/light mode, language).</li>
+        </ul>
+        <p>This data is automatically deleted when the app is uninstalled.</p>
+    </div>
+
+    <div class="section">
+        <h2>4. Permissions</h2>
+        <p>The app does not request any sensitive permissions from Android or iOS.</p>
+    </div>
+
+    <div class="section">
+        <h2>5. Children's Privacy</h2>
+        <p>Our app is suitable for all ages. Since we do not collect any data, the app is completely safe for children under 13 and complies with COPPA.</p>
+    </div>
+
+    <div class="section">
+        <h2>6. Changes to This Policy</h2>
+        <p>We may update this policy from time to time. Any changes will be posted on this page with an updated "last updated" date above.</p>
+    </div>
+
+    <div class="section">
+        <h2>7. Contact Us</h2>
+        <p>For any questions about this policy, you can contact us at:</p>
+        <p><a href="mailto:abodyaren@gmail.com"><strong>abodyaren@gmail.com</strong></a></p>
+    </div>
+</div>
+
+<script>
+    function setLang(lang) {
+        const isAr = lang === 'ar';
+        document.documentElement.lang = lang;
+        document.documentElement.dir = isAr ? 'rtl' : 'ltr';
+
+        document.getElementById('panel-ar').classList.toggle('active', isAr);
+        document.getElementById('panel-en').classList.toggle('active', !isAr);
+
+        document.getElementById('btn-ar').classList.toggle('active', isAr);
+        document.getElementById('btn-en').classList.toggle('active', !isAr);
+        document.getElementById('btn-ar').setAttribute('aria-selected', isAr);
+        document.getElementById('btn-en').setAttribute('aria-selected', !isAr);
+
+        // Restart the fade animation
+        const panel = document.getElementById('panel-' + lang);
+        panel.style.animation = 'none';
+        // Force reflow so the animation restart actually fires
+        void panel.offsetWidth;
+        panel.style.animation = '';
+
+        try { localStorage.setItem('privacy-lang', lang); } catch (e) {}
+    }
+
+    // On load: prefer the stored choice, fall back to browser language,
+    // default to Arabic since the app is Arabic-first.
+    (function () {
+        let lang = null;
+        try { lang = localStorage.getItem('privacy-lang'); } catch (e) {}
+        if (!lang) {
+            const nav = (navigator.language || 'ar').toLowerCase();
+            lang = nav.startsWith('ar') ? 'ar' : (nav.startsWith('en') ? 'en' : 'ar');
+        }
+        setLang(lang);
+    })();
+</script>
+
+</body>
+</html>
